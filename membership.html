@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MEMBERSHIP</title>
+        
+        <!-- Google Webfonts and our stylesheet -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
+        <link rel="stylesheet" href="membership/assets/css/styles.css" />
+        <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+    	<script>
+			var el = document.getElementsByTagName("body")[0];
+			el.className = "";
+		</script>
+        <noscript>
+        	<!--[if IE]>
+            	<link rel="stylesheet" href="css/ie.css">
+            <![endif]-->
+        </noscript>
+		<nav id="topNav">
+        	<ul>
+            	<li><a href='index.html'>Home</a></li>
+          		<li><a href="about.html">About Us</a>
+  
+                </li>
+              <li><a href="membership.html">Membership</a>
+
+              </li>
+              <li><a href="activities.html">Activites</a>
+              </li>
+              <li><a href="motorz.html">Motor Zundung</a>
+           		  
+              </li>
+              <li class="last"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <script src="js/jquery.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script>
+			(function($){
+				
+				//cache nav
+				var nav = $("#topNav");
+				
+				//add indicator and hovers to submenu parents
+				nav.find("li").each(function() {
+					if ($(this).find("ul").length > 0) {
+						$("<span>").text("^").appendTo($(this).children(":first"));
+
+						//show subnav on hover
+						$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						
+						//hide submenus on exit
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+		</script>
+        <div id="start">
+		<div id="impress" class="impress-not-supported">
+			
+			<div id="intro" class="step" data-x="0" data-y="0">
+		        <h2>MEMBERSHIP BENEFITS</h2>
+		        <p>Represents Every Engineering and Scientific Discipline<br />Free Access to emagazines<br />Access to technical Papers and publications at member discount<br /> Free registration at lectures and meetings<br /> Career Development</p>
+		        <img src="membership/assets/img/about-us-car.png" width="232" height="458" />
+		    </div>
+		    
+		    <div id="simplicity" class="step" data-x="1100" data-y="1200" data-scale="1.8" data-rotate="190">
+		        <h2>MORE BENEFITS</h2>
+		        <p>Access vital high-tech mobility information through renewal registration fee for attending SAE INDIA national and international congress </p>
+		        <img src="membership/assets/img/bajasaeindia.jpg" width="250" height="500" />
+		    </div>
+		    
+		    <div id="connect" class="step" data-x="-300" data-y="600" data-scale="0.2" data-rotate="270">
+		        <h2>MEMBERSHIP GRADES</h2>
+		        <p>Member Grade, Associate Grade, Affiliate Grade</p>
+		        <img src="membership/assets/img/baja.jpg" width="558" height="329" />
+		    </div>
+		    
+		    <div id="upload" class="step" data-x="-200" data-y="1500" data-rotate="180">
+		        <h2>REGISTRATION FORM</h2>
+		        <p><a href="http://www.saeindia.org/downloads/SAEINDIA_STUDENT_MEMBERSHIP_APPLICATION__MAR09.pdf" target="_blank">Download registration form in pdf format</a></p>
+		        <img src="membership/assets/img/tank.jpg" width="248" height="510" />
+		    </div>
+		    
+		    <div id="music" class="step" data-x="-1200" data-y="1000" data-scale="0.8" data-rotate="270">
+		        <h2>MORE INFORMATION</h2>
+		        <p>Visit <a href="http://saeindia.org/" target="_blank">www.saeindia.org</a></p>
+		        <img src="membership/assets/img/Aeroplane.jpg" width="570" height="389"/>
+		    </div>
+		    
+		</div>
+
+		<a id="arrowLeft" class="arrow">&lt;</a>
+		<a id="arrowRight" class="arrow">&gt;</a>
+
+        <footer>
+	        
+          <a class="tzine">Website Developed and maintained by <i>Raumali Dasgupta<br><p align="right">Nimit Agarwal</p></i></a>
+</footer> 
+        
+        <!-- JavaScript includes -->
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="membership/assets/js/impress.js"></script>
+		<script src="membership/assets/js/script.js"></script>
+</div>
+    </body>
+</html>
+
